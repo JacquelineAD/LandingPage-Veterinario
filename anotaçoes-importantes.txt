@@ -1,0 +1,29 @@
+MOLDURAS:
+
+<a href="https://www.freepik.com/free-vector/golden-round-frame-with-light-effects_10817254.htm#query=golden%20circle%20png&position=0&from_view=keyword&track=ais&uuid=fa07ec18-c3a5-4089-8b6b-297f7ad3d029">Image by zaie</a> on Freepik
+
+<a href="https://www.freepik.com/free-vector/golden-sparkling-frame-black-background_5375654.htm#query=golden%20circle%20png&position=23&from_view=keyword&track=ais&uuid=fa07ec18-c3a5-4089-8b6b-297f7ad3d029">Image by pikisuperstar</a> on Freepik
+
+Image by <a href="https://www.freepik.com/free-vector/realistic-golden-frame-design_22071288.htm#query=golden%20circle%20png&position=44&from_view=keyword&track=ais&uuid=fa07ec18-c3a5-4089-8b6b-297f7ad3d029">Freepik</a>
+
+Image by <a href="https://www.freepik.com/free-vector/flat-design-dog-cat-silhouette-illustration_41883262.htm#query=dog%20sillhoutte&position=5&from_view=search&track=ais&uuid=da0341ce-a42f-43cc-b0f0-d07008f48b15">Freepik</a>
+
+Image by <a href="https://www.freepik.com/free-vector/hand-drawn-animals-silhouette-set-illustration_30708863.htm#query=horse%20sillhoutte&position=10&from_view=search&track=ais&uuid=0892fb76-95d5-41b2-872a-e72bca23f23a">Freepik</a>
+
+Image by <a href="https://www.freepik.com/free-vector/hand-drawn-rat-silhouette_49550332.htm#query=rat%20sillhoutte&position=0&from_view=search&track=ais&uuid=8fcac24f-d2bd-43cb-8b4d-73377add5b47">Freepik</a>
+
+CORES:
+
+--fundoClaroDosCards: #F7F7F2;
+--textos: #00120B;
+--destaqueDeBotao: #2B50AA;
+--destaqueTitulos: #705324;
+--destaqueazulclaro: ##3E78B2;
+
+FONTES:
+
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Kalnia:wght@400;600&family=Poppins&display=swap');
+
+font-family: 'Bree Serif', serif;
+font-family: 'Kalnia', serif;
+font-family: 'Poppins', sans-serif;

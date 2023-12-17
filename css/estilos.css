@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Kalnia:wght@400;600&family=Poppins&display=swap');
+
+:root{
+
+    --fundoClaroDosCards: #F7F7F2;
+    --textos: #00120B;
+    --destaqueDeBotao: #2B50AA;
+    --destaqueTitulos: #705324;
+    --destaqueazulclaro: #68a1da;
+
+    --fonte-destaque: 'Bree Serif', serif;
+    --fonte-titulos-menores: 'Kalnia', serif;
+    --fonte-textos-gerais: 'Poppins', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background-color:var(--destaqueazulclaro);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.links-cabecalho a{
+    color: var(--fundoClaroDosCards);
+    text-decoration: none;
+    font-size: 20px;
+    font-family: var(--fonte-destaque);
+    padding: 10px 25px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.links-cabecalho a:hover{
+    background-color: var(--destaqueDeBotao);
+    color: var(--fundoClaroDosCards);
+    border-radius: 20px;
+}
+
+header img{
+    width: 150px;
+    height: 150px;
+    margin: 5px 2px 5px 10px;
+}
+
+header #login-button{
+    font-family: var(--fonte-destaque);
+    font-size: 20px;
+    color: var(--fundoClaroDosCards);
+    background: var(--destaqueDeBotao);
+    box-shadow: 2px 2px 4px var(--textos);
+    border: none;
+    border-radius: 20px;
+    padding: 10px 25px;
+    margin: 0px 15px;
+    cursor: pointer;
+}
+
+header #login-button:hover{
+    background-color: var(--fundoClaroDosCards);
+    color: var(--destaqueDeBotao);
+    transition: 0.5s;
+}
+
+
+.secao-introdutoria{
+    position: relative;
+    width: 100vw;
+
+}
+
+.banner-gato{
+    width: 100%;
+}
+
+.secao-introdutoria-texto{
+    position: absolute;
+    top: 40%; /* Ajusta a posição verticalmente ao centro da seção */
+    right: 100px; /* Posiciona à direita da seção */
+    transform: translate(0%, -50%); /* Ajusta a posição vertical usando translate */
+    text-align: end; /* Alinha o texto à direita */
+    padding: 20px; /* Adiciona algum espaçamento interno para melhorar a aparência */
+    color: var(--textos); /* Define a cor do texto */
+    width: 700px;
+}
+
+.secao-introdutoria-texto h1{
+    font-family: var(--fonte-titulos-menores);
+    color: var(--fundoClaroDosCards);
+    font-size: 50px;
+    text-shadow: 2px 2px 4px var(--textos);
+}
+
+.secao-introdutoria-texto h2{
+    font-family: var(--fonte-destaque);
+    color: var(--fundoClaroDosCards);
+    font-size: 35px;
+    text-shadow: 2px 2px 4px var(--textos);
+    margin-bottom: 5px;
+  
+}
+
+.secao-introdutoria-texto p{
+    font-family: var(--fonte-textos-gerais);
+    font-weight: 500;
+    margin-top: 10px;
+
+}
+
+#introducao-button{
+    margin-top: 30px;
+    padding: 10px 40px;
+    font-family: var(--fonte-destaque);
+    font-size: 20px;
+    color: var(--fundoClaroDosCards);
+    background-color: var(--destaqueDeBotao);
+    border: none;
+    box-shadow: 2px 2px 4px var(--textos);
+    border-radius: 20px;
+
+}
+
+#introducao-button:hover{
+    color: var(--destaqueDeBotao);
+    background-color: var(--fundoClaroDosCards);
+    transition: 0.5s;
+    cursor: pointer;
+}
