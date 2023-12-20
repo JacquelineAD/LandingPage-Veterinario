@@ -131,3 +131,50 @@ header #login-button:hover{
     transition: 0.5s;
     cursor: pointer;
 }
+
+.secao-porqueNosEscolher-texto{
+    font-size: 25px;
+    font-family: var(--fonte-destaque);
+    font-weight: 400;
+    color: var(--destaqueDeBotao);
+    text-align: center;
+    margin: 50px 0px;
+}
+
+#secao-porqueNosEscolher-Icons{
+    display: flex;
+    align-items: center;
+    justify-content: space-around; /* Ajusta o espaçamento entre as divs*/
+    margin: auto;
+}
+
+#secao-porqueNosEscolher-Icons .icons{
+   flex: 1; /* Faz com que todas as divs tenham a mesma largura */
+    max-width: 280px; /* Define a largura máxima*/
+    background-color:var(--fundoClaroDosCards);
+    text-align: center;
+    border-radius: 7px;
+    box-shadow: 2px 2px 4px var(--textos);
+    margin: auto;
+    padding: 20px 10px;
+
+}
+
+#secao-porqueNosEscolher-Icons i{
+    font-size: 40px;
+    color:var(--destaqueDeBotao);   
+}
+
+#secao-porqueNosEscolher-Icons h3{
+    font-family: var(--fonte-destaque);
+    text-align: center;
+    font-weight: bolder;
+    font-size: 18px;
+    color: var(--cortitulo);
+}
+
+#secao-porqueNosEscolher-Icons span{
+    font-family: var(--fonte-destaque);
+    font-size: 17px;
+    padding-top: 15px;
+}
