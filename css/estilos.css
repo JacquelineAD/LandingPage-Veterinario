@@ -178,3 +178,103 @@ header #login-button:hover{
     font-size: 17px;
     padding-top: 15px;
 }
+
+#carrosel-de-informacoes{
+      position: relative;
+      /*width: 90%;  ajuste conforme necessário */
+      margin: 50px auto; /* centraliza o carrossel */
+      overflow: hidden;
+}
+
+.container-carrossel {
+    display: flex;
+    transition: transform 0.5s ease; /* Adiciona uma transição suave ao movimento dos slides */
+}
+
+.carrosel-slider {
+    opacity: 0; /*adicionei agora*/
+    flex: 0 0 100%;
+    position: relative;
+    text-align: center;
+    transition: opacity 0.5s ease;
+  }
+
+  .on{
+    opacity: 1;
+  }
+
+  .carrosel-img img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .carrosel-texto {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 600px; /*aqui eu regulo a largura do paragrafo*/
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: var(--fundoClaroDosCards);
+  }
+
+  .carrosel-texto h1{
+    font-family: var(--fonte-titulos-menores);
+    font-size: 50px;
+    text-shadow: 2px 2px 4px var(--textos);
+  }
+
+  .carrosel-texto span{
+    font-family: var(--fonte-destaque);
+    font-size: 25px;
+    text-shadow: 2px 2px 4px var(--textos);
+    
+  }
+
+  .carrosel-texto p{
+    font-family: var(--fonte-textos-gerais);
+    margin-top: 10px;
+    color: var(--textos);
+  }
+
+  .carrosel-texto a{
+    text-decoration: none;
+    font-weight: bolder;
+    cursor: pointer;
+  }
+
+  .carrosel-texto a:hover{
+    text-decoration: underline;
+    transition: 0.5s;
+    color: var(--destaqueDeBotao);
+  }
+
+  #carrosel-de-informacoes #botao-avancar i{
+    font-size: 30px;
+
+  }
+
+  #carrosel-de-informacoes #botao-voltar i{
+    font-size: 30px;
+  }
+
+  
+
+#botao-avancar, #botao-voltar {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background: none;
+      border: none;
+      cursor: pointer;
+}
+
+    
+#botao-voltar{
+    left: 50px;
+}
+  
+#botao-avancar{
+    right: 50px;
+}
+
