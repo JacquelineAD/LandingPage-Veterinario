@@ -1,42 +1,40 @@
-const slider = document.querySelector('.container-carrossel');
-const botaoVoltar = document.getElementById('botao-voltar');
-const botaoAvancar = document.getElementById('botao-avancar');
-const slides = slider.querySelectorAll('.carrosel-slider');
+document.addEventListener('DOMContentLoaded', function () {
+  const slider = document.querySelector('.container-carrossel');
+  const slides = Array.from(slider.querySelectorAll('.carrosel-slider'));
 
-let currentSlide = 0;
+  let currentSlide = 0;
 
-function hideSlides() {
-    slides.forEach(slide => {
-        slide.style.opacity = 0; // Alteração aqui para modificar a opacidade
-    });
-}
+  function showSlide(index) {
+      slides.forEach((slide, i) => {
+          if (i === index) {
+              slide.classList.add('on');
+          } else {
+              slide.classList.remove('on');
+          }
+      });
+  }
 
-function showSlide() {
-    slides[currentSlide].style.opacity = 1; // Alteração aqui para modificar a opacidade
-}
+  function nextSlide() {
+      currentSlide = (currentSlide + 1) % slides.length;
+      updateSliderPosition();
+      showSlide(currentSlide);
+  }
 
-function nextSlide() {
-    hideSlides();
-    if (currentSlide === slides.length - 1) {
-        currentSlide = 0;
-    } else {
-        currentSlide++;
-    }
-    showSlide();
-}
+  function prevSlide() {
+      currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+      updateSliderPosition();
+      showSlide(currentSlide);
+  }
 
-function prevSlide() {
-    hideSlides();
-    if (currentSlide === 0) {
-        currentSlide = slides.length - 1;
-    } else {
-        currentSlide--;
-    }
-    showSlide();
-}
+  function updateSliderPosition() {
+      const slideWidth = slides[currentSlide].offsetWidth;
+      const translateXValue = `-${currentSlide * slideWidth}px`;
+      slider.style.transform = `translateX(${translateXValue})`;
+  }
 
-botaoAvancar.addEventListener('click', nextSlide);
-botaoVoltar.addEventListener('click', prevSlide);
+  document.getElementById('botao-avancar').addEventListener('click', nextSlide);
+  document.getElementById('botao-voltar').addEventListener('click', prevSlide);
 
-// Inicialmente, exibimos o primeiro slide
-showSlide();
+  // Inicialmente, exibe o primeiro slide
+  showSlide(currentSlide);
+});
