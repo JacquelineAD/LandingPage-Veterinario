@@ -288,16 +288,18 @@ header #login-button:hover{
 
 footer{
     width: 100%;
+    height: 300px;
     background-color: var(--destaqueazulclaro);
-    
-    
     padding: 15px 10px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
 }
 
 footer .logo-no-footer{
     width: 120px;
     height: 120px;
-    margin: 20px 0px 5px 10px;
+    margin: 18px 0px 5px 10px;
 }
 
 footer .texto-no-footer{
@@ -312,6 +314,156 @@ footer .texto-no-footer{
 footer .midias-sociais img{
     width: 35px;
     height: 35px;
-    margin: 10px 0px 10px 10px;
+    margin: 10px 0px 5px 10px;
+}
+
+footer .lista-do-footer h3{
+    font-family: var(--fonte-destaque);
+    font-size: 25px;
+    color: var(--fundoClaroDosCards);
+    text-shadow: 2px 2px 4px var(--textos);
+    letter-spacing: 2px;
+    margin-top: 10px;
+    
+}
+
+footer p{
+    color: var(--textos);
+    text-shadow: 2px 2px 4px var(--fundoClaroDosCards);
+}
+
+footer ul, li {
+    list-style: none;
+    font-size: 20px;
+    font-weight: bold;
+    padding-top: 5px;
+  }
+
+  footer .link-do-footer{
+    text-decoration: none;
+    color: var(--textos);
+    text-shadow: 2px 2px 4px var(--fundoClaroDosCards);
+  }
+
+
+footer .footer-copyright{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    text-align: center;
+    background-color: var(--destaqueDeBotao);
+    padding: 8px 0px 8px;
+    color: var(--fundoClaroDosCards);
+    font-family: var(--fonte-destaque);
+    font-size: 12px;
+    margin-top: 30px;
+    
+}
+
+.titulo-contato{
+    font-size: 25px;
+    font-family: var(--fonte-destaque);
+    font-weight: 400;
+    color: var(--destaqueDeBotao);
+    text-align: center;
+    margin: 50px 0px;
+}
+
+.formulario-e-mapa{
+    display: flex;
+    justify-content: space-around;
+   
+}
+
+.formulario-e-mapa .mapa{
+    border: 1px solid var(--destaqueDeBotao);
+    margin-bottom: 15px;
+    border-radius: 15px;
+    padding: 10px;
+    box-shadow: 1px 1px 4px var(--textos);
+}
+
+.formulario-e-mapa .mapa h3{
+    font-family: var(--fonte-destaque);
+    color: var(--destaqueDeBotao);
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.formulario-e-mapa .formulario{
+    
+    border: 1px solid var(--destaqueDeBotao);
+    margin-bottom: 15px;
+    border-radius: 15px;
+    padding: 10px;
+    box-shadow: 1px 1px 4px var(--textos);
+    width: 450px;
+
+}
+
+.formulario-e-mapa .formulario form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    font-size: 20px;
+    font-weight: 400;
+    font-family: var(--fonte-destaque);
+    color: var(--destaqueDeBotao);
+    
+}
+
+.formulario-e-mapa .formulario form label{
+    margin-bottom: 5px;
+    
+}
+
+.formulario-e-mapa .formulario form input{
+    margin-bottom: 10px;
+    padding: 8px;
+}
+
+.formulario-e-mapa .formulario form textarea{
+    margin-bottom: 10px;
+}
+
+.formulario-e-mapa .formulario form select{
+    margin-bottom: 15px;
+    padding: 8px;
+}
+
+.formulario-e-mapa .formulario form button{
+    font-size: 20px;
+    width: 250px;
+    margin: auto;
+    padding: 10px;
+    background-color: var(--destaqueDeBotao);
+    color: var(--fundoClaroDosCards);
+    border: none;
+    border-radius: 20px;
+    font-family: var(--fonte-destaque);
+    box-shadow: 2px 2px 4px var(--textos);
+
+}
+
+.formulario-e-mapa .formulario form .agendamento{
+    margin-top: 10px;
+}
+
+.formulario-e-mapa .formulario form button:hover{
+    transition: 0.5s;
+    background-color: var(--destaqueazulclaro);
+}
+
+
+
+.formulario-e-mapa .formulario h3{
+    font-family: var(--fonte-destaque);
+    color: var(--destaqueDeBotao);
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 10px;
 }
 
