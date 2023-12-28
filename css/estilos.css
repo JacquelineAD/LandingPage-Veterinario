@@ -182,21 +182,22 @@ header #login-button:hover{
 #carrosel-de-informacoes{
       position: relative;
       /*width: 90%;  ajuste conforme necessário */
-      margin: 50px auto; /* centraliza o carrossel */
+      margin: 50px auto; /* centraliza o carrossel*/ 
       overflow: hidden;
 }
 
 .container-carrossel {
     display: flex;
     transition: transform 0.5s ease; /* Adiciona uma transição suave ao movimento dos slides */
+    overflow: hidden;
 }
 
 .carrosel-slider {
-    opacity: 0; /*adicionei agora*/
+    /*opacity: 1; adicionei agora*/
     flex: 0 0 100%;
     position: relative;
     text-align: center;
-    transition: opacity 0.5s ease;
+    transition: 0.5s ease;
   }
 
   .on{
@@ -260,13 +261,14 @@ header #login-button:hover{
 
   
 
-#botao-avancar, #botao-voltar {
+    #botao-avancar, #botao-voltar {
       position: absolute;
       top: 50%;
       transform: translateY(-50%);
       background: none;
       border: none;
       cursor: pointer;
+      
 }
 
     
@@ -276,5 +278,39 @@ header #login-button:hover{
   
 #botao-avancar{
     right: 50px;
+}
+
+
+
+
+
+
+footer{
+    width: 100%;
+    background-color: var(--destaqueazulclaro);
+    
+    
+    padding: 15px 10px;
+}
+
+footer .logo-no-footer{
+    width: 120px;
+    height: 120px;
+    margin: 20px 0px 5px 10px;
+}
+
+footer .texto-no-footer{
+    width: 300px;
+    font-family: var(--fonte-destaque);
+    color: var(--fundoClaroDosCards);
+    text-shadow: 2px 2px 2px var(--textos);
+    margin: 0px 0px 0px 10px;
+    font-size: 18px;
+}
+
+footer .midias-sociais img{
+    width: 35px;
+    height: 35px;
+    margin: 10px 0px 10px 10px;
 }
 
