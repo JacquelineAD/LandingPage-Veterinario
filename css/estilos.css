@@ -189,7 +189,7 @@ header #login-button:hover{
 .container-carrossel {
     display: flex;
     transition: transform 0.5s ease; /* Adiciona uma transição suave ao movimento dos slides */
-    overflow: hidden;
+    overflow: visible;
 }
 
 .carrosel-slider {
