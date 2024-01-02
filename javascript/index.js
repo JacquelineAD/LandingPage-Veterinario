@@ -1,3 +1,9 @@
+window.onload = function() {
+  window.scrollTo(0, 0);
+};
+
+
+
 function redirectToWhatsApp() {
 
   // Substitua '123456789' pelo número de telefone desejado
@@ -66,3 +72,25 @@ document.getElementById('botao-voltar').addEventListener('click', prevSlide);
  // Inicialmente, exibe o primeiro slide
  showSlide(currentSlide);
 });
+
+function campoAgendamento(){
+
+  let campoAgendamento = document.getElementById('campoDeAgendamento'); //confere o campo de destino
+
+  if (campoDeAgendamento){
+
+    campoDeAgendamento.scrollIntoView({ behavior: 'smooth' }); //efetua a rolagem até onde precisa
+  }
+}
+
+function campoServicos(){
+
+  let campoServicos = document.getElementById('carrosel-de-informacoes');
+
+  if (campoServicos){
+
+    campoServicos.scrollIntoView({ behavior: 'smooth' });
+  }
+}
+
+

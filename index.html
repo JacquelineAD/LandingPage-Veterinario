@@ -15,12 +15,12 @@
 
         <div class="links-cabecalho">
             <a href="#">Home</a>
-            <a href="#">Serviços</a>
-            <a href="#">Agendamento</a>
-            <a href="#">Contato</a>
-            <button id="login-button">Log In</button>
+            <a href="#" onclick="campoServicos()">Serviços</a>
+            <a href="#" id="campoAgendamento" onclick="campoAgendamento()">Agendamento</a>
+            <a href="#" onclick="campoAgendamento()">Contato</a>
         </div>
     </header>
+
 
     <section id="secao-introdutoria">
         <img class="banner-gato" src="img/banner-gato-1.png" alt="banner com fundo amarelo e gato com flores">
@@ -29,7 +29,7 @@
             <h1>O cuidado veterinário</h1>
             <h2>Que seu peludo merece!</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum minima consequuntur iure quidem molestiae eius pariatur dignissimos asperiores deleniti reprehenderit facilis ut facere, doloremque quod necessitatibus sequi repellat tenetur recusandae.</p>
-            <button id="introducao-button">Conheça nossos serviços</button>
+            <button id="introducao-button" onclick="campoServicos()">Conheça nossos serviços</button>
         </div>
 
     </section>
@@ -106,35 +106,35 @@
                     </div>
                 </div>
                 <div class="carrosel-slider">
-                    <img src="img/banner-fundo-branco.png" alt="">
+                    <img src="img/banner-consultas.png" alt="">
                     <div class="carrosel-texto">
                         <h1>Consultas</h1>
                         <p>Nossas consultas podem ser feitas em nosso consultório ou domiciliar. O atendimento funciona 24h e em caso de emergência basta ligar para o número disponibilizado na área de <a href="#">contato</a>.</p>
                     </div>
                 </div>
                 <div class="carrosel-slider">
-                    <img src="img/banner-fundo-branco.png" alt="">
+                    <img src="img/banner-medicamentos.png" alt="">
                     <div class="carrosel-texto">
                         <h1>Vacinas e Medicamentos</h1>
                         <p>Vacinas para cães e gatos. <strong>Antirrábica</strong>, <strong>V8/V10</strong>, entre outras a critério veterinário. Trabalhamos com <strong>vacinas importadas</strong> e <strong>nacionais</strong> e também com a <strong>prescrição de medicamentos farmaceuticos</strong> e <strong>fórmulas manipuladas</strong>.</p>
                     </div>
                 </div>
                 <div class="carrosel-slider">
-                    <img src="img/banner-fundo-branco.png" alt="">
+                    <img src="img/banner-exames1.png" alt="">
                     <div class="carrosel-texto">
                         <h1>Exames</h1>
                         <p><strong>Ultrassom</strong>,<strong>Raio-X</strong>, <strong>Ecocardiograma</strong>, <strong>Eletrocardiograma</strong>,<strong>Exames de sangue</strong> e <strong>Urina</strong>. Os exames podem ser coletados em consultório e alguns contam com ajuda de nossos parceiros indo inclusive até sua casa com horário agendado.</p>
                     </div>
                 </div>
                 <div class="carrosel-slider">
-                    <img src="img/banner-fundo-branco.png" alt="">
+                    <img src="img/banner-cirurgia.png" alt="">
                     <div class="carrosel-texto">
                         <h1>Cirurgias</h1>
                         <p><strong>Castrações</strong> e ampla gama de cirurgias podem ser realizadas em nosso consultório após avaliação do quadro do paciente.</p>
                     </div>
                 </div>
                 <div class="carrosel-slider">
-                    <img src="img/banner-fundo-branco.png" alt="">
+                    <img src="img/banner-terapia.png" alt="">
                     <div class="carrosel-texto">
                         <h1>Terapias</h1>
                         <p>Também trabalhamos com o desenvolvimento e acompanhamento de <strong>terapias alternativas</strong> como a <strong>Aromateria</strong>, <strong>Reiki veterinário</strong>, <strong>Florais de Bach</strong> e a <strong>Ozônioterapia</strong>, visando tratamento mais naturais para seu pet.</p>
@@ -156,7 +156,7 @@
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3718.4781116954405!2d-48.31450438222222!3d-21.25253407018119!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94b96c838c5ae7b5%3A0x6c15b7d4783b0737!2sR.%20Prof.%20Norival%20Mendes%2C%2050%20-%20Jardim%20Bela%20Vista%2C%20Jaboticabal%20-%20SP%2C%2014883-208!5e0!3m2!1spt-BR!2sbr!4v1703790016988!5m2!1spt-BR!2sbr" width="450" height="450" style="border: 0;;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
 
-            <div class="formulario">
+            <div class="formulario" id="campoDeAgendamento">
                 <h3>Agendamento</h3>
                 
                     <form action="" method="post">
@@ -226,9 +226,7 @@
                 <li>
                     <a class="link-do-footer" href="#">Contato</a>
                 </li>
-                <li>
-                    <a class="link-do-footer" href="#">Login</a>
-                </li>
+                
 
             </ul>
 
@@ -239,8 +237,9 @@
                 <li>
                     <p>Telefone: (16) 99627-5084</p>
                 </li>
+                <br>
                 <li>
-                    <p>Endereço: Rua 1234 número 12 - Bairro 34 -Jaboticabal-SP </p>
+                    <p>Endereço: Rua 1234 número 12  <br>  Bairro 34-Jaboticabal-SP </p>
                 </li>
                 
             </ul>
